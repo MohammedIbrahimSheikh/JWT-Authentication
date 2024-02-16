@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <form class="auth" id="login">
+        <header>
+            <h1>Personal Blogging App</h1>
+        </header>
+        <h2>Log in to your Account</h2>
+        <span>Don't have an account ?<a href="./signup.html">SignUp</a></span>
+        <div>
+            <label for="login-email">Email:</label>
+            <div>
+                <input type="email" id="login-email" required>
+            </div>
+            <label for="login-password">Password</label>
+            <div>
+                <input type="password" id="login-password" required>
+            </div>
+            <div>
+                <input type="submit" value="logIn">
+            </div>
+        </div>
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>

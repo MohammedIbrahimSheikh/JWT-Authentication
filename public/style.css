@@ -1,0 +1,299 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+span{
+    display: block;
+    text-align: center;
+}
+span>a{
+    text-decoration: none;
+    font-weight: 800;
+    color: blueviolet;
+}
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.greeting {
+    margin-bottom: 20px;
+}
+
+.blog-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+.blog-heading::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto;
+}
+
+.blog-intro {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin-bottom: 0;
+}
+form>div {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+form>div>div {
+    align-self: center;
+    margin: 7px 0px;
+}
+
+form>div>h1 {
+    text-align: center;
+}
+
+label {
+    position: relative;
+    left: 50px;
+}
+
+input {
+    padding: 5px 0px 5px 10px;
+    border-radius: 10px;
+    outline-color: blueviolet;
+}
+
+input[type=submit] {
+    background-color: blueviolet;
+    padding: 10px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 5px 0;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .blog-heading {
+        font-size: 24px;
+    }
+    .blog-intro {
+        font-size: 16px;
+    }
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+span>a {
+    text-decoration: none;
+    font-weight: 800;
+    color: blueviolet;
+}
+
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.greeting {
+    margin-bottom: 20px;
+}
+
+.blog-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+.blog-heading::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto;
+}
+
+.blog-intro {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin-bottom: 0;
+}
+
+form.auth>div {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+form.auth>div>div {
+    align-self: center;
+    margin: 8px 0px;
+}
+
+form.auth>div>h1 {
+    text-align: center;
+}
+
+label {
+    position: relative;
+    left: 35px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+    outline-color: blueviolet;
+}
+
+input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 300px;
+}
+
+.auth input,input[type="submit"] {
+    width: 215px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* padding: 5px 0px 5px 10px; */
+    /* border-radius: 10px; */
+    outline-color: blueviolet;
+}
+
+input[type="submit"] {
+    background-color: blueviolet;
+    /* padding: 10px 20px; */
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 5px 0;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .blog-heading {
+        font-size: 24px;
+    }
+
+    .blog-intro {
+        font-size: 16px;
+    }
+}
