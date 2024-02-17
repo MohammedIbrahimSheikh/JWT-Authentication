@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <form class="auth" id="login">
-        <header>
-            <h1>Personal Blogging App</h1>
-        </header>
+    <header>
+        <h1>Personal Blogging App</h1>
+    </header>
+    <main>
         <h2>Log in to your Account</h2>
         <span>Don't have an account ?<a href="./signup.html">SignUp</a></span>
-        <div>
-            <label for="login-email">Email:</label>
+        <form class="auth" id="login">
             <div>
-                <input type="email" id="login-email" required>
+                <label for="login-email">Email:</label>
+                <div>
+                    <input type="email" id="login-email" required>
+                </div>
+                <label for="login-password">Password</label>
+                <div>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div>
+                    <input type="submit" value="logIn">
+                </div>
             </div>
-            <label for="login-password">Password</label>
-            <div>
-                <input type="password" id="login-password" required>
-            </div>
-            <div>
-                <input type="submit" value="logIn">
-            </div>
-        </div>
-    </form>
+        </form>
+    </main>
     <script src="./app.js"></script>
 </body>
 
