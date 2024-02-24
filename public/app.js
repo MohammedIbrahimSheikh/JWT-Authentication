@@ -17,7 +17,7 @@ if (signUp) {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/signup',
+      const response = await axios.post('https://personal-blog-app.cyclic.app/api/auth/signup',
 
         {
           "firstName": firstName.value.trim(),
@@ -44,7 +44,7 @@ if (logIn) {
     let email = document.getElementById("login-email");
     let password = document.getElementById("login-password");
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login',
+      const response = await axios.post('https://personal-blog-app.cyclic.app/api/auth/login',
         {
           "email": email.value.trim(),
           "password": password.value.trim()
@@ -68,7 +68,7 @@ if (write) {
     let text = document.getElementById("text");
     // console.log(title,text);
     try {
-      const response = await axios.post('http://localhost:3000/api/post', {
+      const response = await axios.post('https://personal-blog-app.cyclic.app/api/post', {
         "title": title.value.trim(),
         "text": text.value.trim()
       });
@@ -86,9 +86,9 @@ if (write) {
   })
 }
 
-if (myBlogs) myBlogs.addEventListener("load", getBlogs(myBlogs, "http://localhost:3000/api/posts"));
+if (myBlogs) myBlogs.addEventListener("load", getBlogs(myBlogs, "https://personal-blog-app.cyclic.app/api/posts"));
 
-if (allBlogs) allBlogs.addEventListener("load", getBlogs(allBlogs, "http://localhost:3000/api/posts"));
+if (allBlogs) allBlogs.addEventListener("load", getBlogs(allBlogs, "https://personal-blog-app.cyclic.app/api/posts"));
 
 async function getBlogs(item, url) {
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
