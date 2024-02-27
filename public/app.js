@@ -91,22 +91,28 @@ if (myBlogs) myBlogs.addEventListener("load", getBlogs(myBlogs, "https://persona
 if (allBlogs) allBlogs.addEventListener("load", getBlogs(allBlogs, "https://personal-blog-app.cyclic.app/api/posts"));
 
 async function getBlogs(item, url) {
-  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   try {
     const response = await axios.get(url);
     // console.log(response);
     const posts = response.data.results;
     // console.log(posts);
     for (let index = 0; index < posts.length; index++) {
-      const div = document.createElement("div");
-      div.appendChild(document.createElement("h2"));
-      div.lastElementChild.innerText = `${posts[index].title}`;
-      div.appendChild(document.createElement("h4"));
-      div.lastElementChild.innerText = `${posts[index].fullName}-${months[new Date(posts[index].createdOn).getMonth()]} ${new Date(posts[index].createdOn).getDate()},${new Date(posts[index].createdOn).getFullYear()}`
-      div.appendChild(document.createElement("p"));
-      div.lastElementChild.innerText = `${posts[index].text}`;
-      div.className = "post";
-      item.appendChild(div);
+      const divBlog = document.createElement("div");
+      let date = new Date(posts[index].createdOn);
+      divBlog.className = "blog";
+      divBlog.innerHTML =
+       `
+       <div class="blog-head">
+          <img src="../src/img/profile-img.png" class="user-img"/>
+          <div class="title-name-date">
+              <h2 class="title">${posts[index].title}</h2>
+              <div class="name-date">${posts[index].fullName}-${months[date.getMonth()]}${date.getDate()},${date.getFullYear()}</div>
+          </div>
+        </div>
+        <article class="blog-text">${posts[index].text}</article>
+      `
+      item.appendChild(divBlog);
     }
   } catch (error) {
     console.log(error);

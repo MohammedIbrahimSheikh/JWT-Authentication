@@ -16,18 +16,26 @@
     <main>
         <h2>Log in to your Account</h2>
         <span>Don't have an account ?<a href="./signup.html">SignUp</a></span>
-        <form class="auth" id="login">
-            <div>
-                <label for="login-email">Email:</label>
+        <form  id="login">
+            <div class="auth">
                 <div>
-                    <input type="email" id="login-email" required>
+                    <div>
+                        <label for="login-email">Email:</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="email" id="login-email" required>
+                    </div>
                 </div>
-                <label for="login-password">Password</label>
                 <div>
-                    <input type="password" id="login-password" required>
+                    <div>
+                        <label for="login-password">Password</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="password" id="login-password" required>
+                    </div>
                 </div>
                 <div>
-                    <input type="submit" value="logIn">
+                    <button class="btn" type="submit">LogIn</button>
                 </div>
             </div>
         </form>

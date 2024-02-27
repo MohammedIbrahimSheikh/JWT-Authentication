@@ -1,64 +1,51 @@
-body {
+*{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
-
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-
-h2 {
+h1,h2 {
     text-align: center;
 }
-
 span {
     display: block;
     text-align: center;
 }
-
 span>a {
     text-decoration: none;
     font-weight: 800;
     color: blueviolet;
 }
-
 nav {
     background-color: #666;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
-
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
 main {
     padding: 20px;
-    text-align: center;
 }
-
 .greeting {
+    text-align: center;
     margin-bottom: 20px;
 }
-
 .blog-heading {
     font-size: 32px;
     margin-bottom: 30px;
     color: #343a40;
 }
-
 .blog-heading::after {
     content: "";
     display: block;
@@ -67,86 +54,84 @@ main {
     background-color: #007bff;
     margin: 10px auto;
 }
-
 .blog-intro {
+    text-align: center;
     font-size: 18px;
     color: #6c757d;
     margin-bottom: 30px;
 }
-
-.post {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+div.blog{
+    max-width: 800px;
+    min-width: 280px;
+    margin: 0.8rem auto;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-.post h2 {
-    margin-top: 0;
+div.blog-head{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 }
-
-.post p {
-    margin-bottom: 0;
+img.user-img{
+    width: 65px;
+    border-radius: 50%;
 }
-
-form.auth>div {
+h2.title{
+    margin-bottom: 0.25rem;
+}
+div.name-date{
+    color: #BABABC;
+}
+div.auth{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 280px;
-    margin: auto;
-    margin-top: 40px;
-}
-
-form.auth>div>div {
-    align-self: center;
-    margin: 8px 0px;
-}
-
-form.auth>div>h1 {
-    text-align: center;
-}
-
-label {
-    position: relative;
-    left: 35px;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 10px;
+    margin: 20px auto;
+    padding: 15px;
+}
+div.input-parent{
+    margin: 5px 0px;
+}
+div.input-parent >input{
+    padding: 7px;
+    border-radius: 6px;
     outline-color: blueviolet;
 }
-
-input[type="text"] {
-    height: 40px;
-}
-
-textarea {
-    height: 300px;
-}
-
-.auth input,input[type="submit"] {
-    width: 215px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    /* padding: 5px 0px 5px 10px; */
-    /* border-radius: 10px; */
-    outline-color: blueviolet;
-}
-
-input[type="submit"] {
+button.btn{
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 7px;
     background-color: blueviolet;
-    /* padding: 10px 20px; */
+    border: 2px solid blueviolet;
 }
-
+div.blog-input-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.blog-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 70%;
+}
+div.blog-input>input,
+div.blog-input>textarea{
+    padding: 0.6rem;
+    border-radius: 7px;
+    outline-color: blueviolet;
+}
+div.blog-input>textarea{
+    height: 84px;
+    overflow: hidden;
+}
+input,textarea{
+    border:2px solid #ccc;
+}
 @media only screen and (max-width: 600px) {
     nav {
         padding: 5px 0;

@@ -16,34 +16,54 @@
     <main>
         <h2>Create your Account</h2>
         <span>Have an account ?<a href="./login.html">Login now</a></span>
-        <form class="auth" id="signup">
-            <div>
-                <label for="firstname">First Name</label>
+        <form id="signup">
+            <div class="auth">
                 <div>
-                    <input type="text" id="firstname" required>
-                </div>
-                <label for="lastname">Last Name</label>
-                <div>
-                    <input type="text" id="lastname" required>
-                </div>
-                <label for="email">Email</label>
-                <div>
-                    <input type="email" id="email" required>
-                </div>
-                <label for="password">Password</label>
-                <div>
-                    <input type="password" id="password" required>
-                </div>
-                <label for="confirmpassword">Confirm Password</label>
-                <div>
-                    <input type="password" id="confirmpassword" required>
+                    <div>
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="text" id="firstname" required>
+                    </div>
                 </div>
                 <div>
-                    <input type="submit" value="SignUp">
+                    <div>
+                        <label for="lastname">Last Name</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="text" id="lastname" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="confirmpassword">Confirm Password</label>
+                    </div>
+                    <div class="input-parent">
+                        <input type="password" id="confirmpassword" required>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn" type="submit">SignUp</button>
                 </div>
             </div>
-            <div id="message"></div>
         </form>
+        <!-- <div id="message"></div> -->
     </main>
     <script src="./app.js"></script>
 </body>
